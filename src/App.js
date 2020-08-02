@@ -9,70 +9,29 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Accordion from 'react-bootstrap/Accordion';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Table from 'react-bootstrap/Table'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route,Switch} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./globals/fontawesome";
+import HomePage from "./pages/homePage";
+import PatientsPage from "./pages/patientsPage";
+import WaitingRoomPage from "./pages/waitingRoomPage";
+import VisitHistoryPage from "./pages/visitHistoryPage";
+import SchedulingPage from "./pages/schedulingPage";
 
 function App() {
   return (
       <>
-      <BrowserRouter>
-        <SiteHeader />
-        </BrowserRouter>
-        <div>
-        
-         <Table striped bordered hover>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Gender</th>
-      <th>Date of Birth</th>
-      <th>More information</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Male</td>
-      <td>01-11-1978</td>
-      <td><DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
-                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jessie</td>
-      <td>Thornton</td>
-      <td>Female</td>
-      <td>01-11-1978</td>
-      <td><DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
-                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Larry</td>
-      <td>Test</td>
-      <td>Male</td>
-      <td>01-11-1978</td>
-      <td><DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
-                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton></td>
-    </tr>
-  </tbody>
-</Table>
-         </div>
-         </>
+       <BrowserRouter>
+          <SiteHeader />
+          <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/patients" component={PatientsPage} />
+          <Route path="/waitingroom" component={WaitingRoomPage} />
+          <Route path="/visithistory" component={VisitHistoryPage} />
+          <Route path="/scheduling" component={SchedulingPage}/>
+          </Switch>
+       </BrowserRouter>
+       </>
   );
 }
 

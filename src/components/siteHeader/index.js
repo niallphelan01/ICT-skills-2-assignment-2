@@ -10,15 +10,17 @@ const SiteHeader = () => {
     <div>
     <img class="img-fluid" src={logo} crop="fill" effect="sepia" alt="Logo" height="50px" />
     </div>
+    
     <Navbar>
+    
     <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="">HL7 Application</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="">Home</Nav.Link>
-      <Nav.Link href="">Waiting Room</Nav.Link>
-      <Nav.Link href="">Patients</Nav.Link>
-      <Nav.Link href="">Visit History</Nav.Link>
-      <Nav.Link href="">Scheduling</Nav.Link>
+      <Nav.Link href="/">home</Nav.Link>
+      <Nav.Link href="/waitingroom">Waiting Room</Nav.Link>
+      <Nav.Link href="/patients">patients</Nav.Link>
+      <Nav.Link href="/visithistory">Visit History</Nav.Link>
+      <Nav.Link href="/scheduling">Scheduling</Nav.Link>
     </Nav>
     
   </Navbar>
