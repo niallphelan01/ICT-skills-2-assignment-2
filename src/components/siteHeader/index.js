@@ -16,7 +16,7 @@ const SiteHeader = () => {
     <Nav className="mr-auto">
       <Nav.Link href="">Home</Nav.Link>
       <Nav.Link href="">Waiting Room</Nav.Link>
-      <Nav.Link href="">Paitents</Nav.Link>
+      <Nav.Link href="">Patients</Nav.Link>
       <Nav.Link href="">Visit History</Nav.Link>
       <Nav.Link href="">Scheduling</Nav.Link>
     </Nav>

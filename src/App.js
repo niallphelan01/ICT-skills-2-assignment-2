@@ -8,6 +8,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Accordion from 'react-bootstrap/Accordion';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Table from 'react-bootstrap/Table'
 import { BrowserRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./globals/fontawesome";
@@ -19,85 +20,57 @@ function App() {
         <SiteHeader />
         </BrowserRouter>
         <div>
-        <CardDeck>
-        <Accordion defaultActiveKey="0">
-           <Card className = 'text-center' style={{ width: '18rem' }}>
-              <Card.Title><FontAwesomeIcon icon={["fas", "address-book"]} size="1x" /> Patient Name</Card.Title>
-              <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1"> More information</Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="1">
-                 <Card.Body>More information on the patient, fields etc.
-                     <DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        
+         <Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>Date of Birth</th>
+      <th>More information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>Male</td>
+      <td>01-11-1978</td>
+      <td><DropdownButton id="dropdown-basic-button" title="Action">
+                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton>
-                 </Card.Body>
-                
-              </Accordion.Collapse>
-              <Card.Footer className="text-muted">Last updated</Card.Footer>
-                      </Card>
-         </Accordion>
-         <Accordion defaultActiveKey="0">
-           <Card className = 'text-center' style={{ width: '18rem' }}>
-              <Card.Title><FontAwesomeIcon icon={["fas", "address-book"]} size="1x" /> Patient Name</Card.Title>
-              <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1"> More information</Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="1">
-                 <Card.Body>More information on the patient, fields etc.
-                     <DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                 </DropdownButton></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jessie</td>
+      <td>Thornton</td>
+      <td>Female</td>
+      <td>01-11-1978</td>
+      <td><DropdownButton id="dropdown-basic-button" title="Action">
+                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton>
-                 </Card.Body>
-                
-              </Accordion.Collapse>
-              <Card.Footer className="text-muted">Last updated</Card.Footer>
-                      </Card>
-         </Accordion>
-         <Accordion defaultActiveKey="0">
-           <Card className = 'text-center' style={{ width: '18rem' }}>
-              <Card.Title>Patient Name</Card.Title>
-              <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1"> More information</Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="1">
-                 <Card.Body>More information on the patient, fields etc.
-                     <DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                 </DropdownButton></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>Test</td>
+      <td>Male</td>
+      <td>01-11-1978</td>
+      <td><DropdownButton id="dropdown-basic-button" title="Action">
+                     <Dropdown.Item href="#/action-1">More information</Dropdown.Item>
                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton>
-                 </Card.Body>
-                
-              </Accordion.Collapse>
-              <Card.Footer className="text-muted">Last updated</Card.Footer>
-                      </Card>
-         </Accordion>
-         <Accordion defaultActiveKey="0">
-           <Card className = 'text-center' style={{ width: '18rem' }}>
-              <Card.Title>Patient Name</Card.Title>
-              <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1"> More information</Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="1">
-                 <Card.Body>More information on the patient, fields etc.
-                     <DropdownButton id="dropdown-basic-button" title="Action">
-                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                 </DropdownButton>
-                 </Card.Body>
-                
-              </Accordion.Collapse>
-              <Card.Footer className="text-muted">Last updated</Card.Footer>
-                      </Card>
-         </Accordion>
-         
-         </CardDeck>
+                 </DropdownButton></td>
+    </tr>
+  </tbody>
+</Table>
          </div>
          </>
   );
