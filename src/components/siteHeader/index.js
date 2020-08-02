@@ -10,10 +10,8 @@ const SiteHeader = () => {
     <div>
     <img class="img-fluid" src={logo} crop="fill" effect="sepia" alt="Logo" height="50px" />
     </div>
-    
-    <Navbar>
-    
     <Navbar bg="dark" variant="dark">
+    <Navbar.Collapse className="justify-content-end">
     <Navbar.Brand href="">HL7 Application</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/">home</Nav.Link>
@@ -21,15 +19,18 @@ const SiteHeader = () => {
       <Nav.Link href="/patients">patients</Nav.Link>
       <Nav.Link href="/visithistory">Visit History</Nav.Link>
       <Nav.Link href="/scheduling">Scheduling</Nav.Link>
+      
     </Nav>
-    
-  </Navbar>
-  <Navbar.Collapse className="justify-content-end">
+   
+    <Nav>
     <Navbar.Text>
       Signed in as: <a href="#login">User Name</a>
     </Navbar.Text>
-  </Navbar.Collapse>
-</Navbar>
+    </Nav>
+    </Navbar.Collapse>
+    </Navbar>
+    
+
 </>
   );
 };
