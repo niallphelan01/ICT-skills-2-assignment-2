@@ -1,68 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project - ReactJS app.
 
-## Available Scripts
+Name: ... Niall Phelan ...
 
-In the project directory, you can run:
+## Overview.
+...... This Patient application is a simple application for the listing of patients for appointments, editing, reviewing, scheduling and deleting  .........
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+............ 
+ 
+ + Login page (to be completed)
+ + Home page with details of the app
+ + Seach of patient field (to be completed)
+ + Visit history for patients (to be completed)
+ + Scheduling of patients (to be completed)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup requirements.
 
-### `yarn test`
+...... Insert a brief explanation (to a third party) of any non-standard setup steps necessary to run your app/client locally (after cloning the repo) ........
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Data Model.
 
-### `yarn build`
+..... To be completed........
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![][model]
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+......To be completed.........
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## App Design.
 
-### `yarn eject`
+### Component catalogue.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+....... To be completed .......
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![][stories]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### UI Design.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+...... To be completed ........
 
-## Learn More
+![][view]
+>To be completed 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Routing.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+...... To be completed ......... 
 
-### Code Splitting
++ /blogs - displays all published blogs.
++ /blogs/:id (private) - detail view of a particular blog.
++ /blogs/:id/comments (private) - detail view of a particular blog and its comments.
++ etc.
++ etc.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## React feature set.
 
-### Analyzing the Bundle Size
+..... To be completed  ......
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
++ useState and useEffect hooks - src/components/fileA.js
++ useContext hook - src/components/fileb.js
++ Extended Link - src/components/fileA.js
++ Programmatic navigation - src/pages/fileC.js
++ etc
++ etc
++ etc
 
-### Making a Progressive Web App
+## Independent learning.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+. . . . . To be completed  ......... 
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[model]: ./data.jpg
+[view]: ./view.png
+[stories]: ./storybook.png
