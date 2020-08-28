@@ -1,19 +1,33 @@
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import React, { useState, useEffect } from 'react';
+
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import Accordion from 'react-bootstrap/Accordion';
-import CardDeck from 'react-bootstrap/CardDeck';
+
 import Table from 'react-bootstrap/Table'
+import PatientList from '../components/patientList';
 
 const PatientsPage = () => {
-
-
+    const [patients, setPatients] = useState([]);
+    useEffect(() => {
+      fetch(
+        `http://hapi.fhir.org/baseR4/Patient?_pretty=true`
+      )
+        .then(res => res.json())
+        .then(json => {
+          console.log(json.entry)
+          setPatients(json.entry);
+          })
+        
+    }, []);
+    
+/*<section className = 'patientsList'>
+       {patients.map((patient) => (
+        <PatientList patients={patient}/>
+       ))}
+       </section>*/
     return(
       <>
-       
-       
+      
        <div>
         <div className="row ">
         <div className="col-md-12">
@@ -42,7 +56,11 @@ const PatientsPage = () => {
           
           </div>
           </div>
-
+          <section className = 'patientsList'>
+       
+       <PatientList patients={patients}/>
+      
+      </section>
          <Table striped bordered hover>
          <thead>
             <tr>
