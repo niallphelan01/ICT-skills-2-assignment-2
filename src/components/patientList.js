@@ -29,7 +29,7 @@ const PatientList = ({patients}) => {
             <>
             <tbody>
             <tr>
-            <td>{patient.resource.id} <p key={patient.resource.id}>
+            <td><p key={patient.resource.id}>
                 <Link to ={`/singlePatientPage/${patient.resource.id}`}>{patient.resource.id}</Link>
                 </p></td>
             
