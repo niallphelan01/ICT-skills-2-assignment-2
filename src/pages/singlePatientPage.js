@@ -23,12 +23,16 @@ const SinglePatientPage = ({match}) => {
               {patient.name ?  //Allowance for the name field being undefined
                 patient.name.map(  name =>(
                     <>
-                    <p>First name {name.given}</p> <p>Surname {name.family}</p>
+                    <p>First name: {name.given}</p> <p>Surname: {name.family}</p>
                     </>
                 )):"Name Undefined..."}
                 </>
-                <p>Gender {patient.gender}</p>
-            <p>DOB {patient.birthDate}</p>
+                {patient.gender? 
+                <p>Gender: {patient.gender}</p>
+                :<p>Gender not assigned</p>}
+                {patient.birthDate ? 
+                 <p>DOB: {patient.birthDate}</p>
+                 :<p>DOB not assigned</p>}
 
                 {patient.address ?  //Allowance for the name field being undefined
                 patient.address.map( address =>(
