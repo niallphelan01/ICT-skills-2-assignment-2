@@ -9,6 +9,7 @@ import PatientsPage from "./pages/patientsPage";
 import WaitingRoomPage from "./pages/waitingRoomPage";
 import VisitHistoryPage from "./pages/visitHistoryPage";
 import SchedulingPage from "./pages/schedulingPage";
+import SinglePatientPage from "./pages/singlePatientPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/waitingroom" component={WaitingRoomPage} />
           <Route path="/visithistory" component={VisitHistoryPage} />
           <Route path="/scheduling" component={SchedulingPage}/>
+          <Route path="/singlePatientPage/:id" component={SinglePatientPage}/>
           </Switch>
        </BrowserRouter>
        </>

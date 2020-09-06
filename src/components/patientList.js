@@ -1,6 +1,8 @@
+/* eslint-disable no-template-curly-in-string */
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import {Link} from 'react-router-dom';
 
 import Table from 'react-bootstrap/Table'
 const PatientList = ({patients}) => {
@@ -27,7 +29,9 @@ const PatientList = ({patients}) => {
             <>
             <tbody>
             <tr>
-            <td>{patient.resource.id}</td>
+            <td>{patient.resource.id} <p key={patient.resource.id}>
+                <Link to ={`/singlePatientPage/${patient.resource.id}`}>{patient.resource.id}</Link>
+                </p></td>
             
             
           {
@@ -54,8 +58,10 @@ const PatientList = ({patients}) => {
             
             <td><DropdownButton id="dropdown-basic-button" title="Action">
                     <Dropdown.Item href={patient.fullUrl}>More information  </Dropdown.Item>
+                    <Dropdown.Item href={`/singlePatientPage/${patient.resource.id}`}>Single Patient details</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">Add to waiting room</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">Visit history</Dropdown.Item>
+                    
                 </DropdownButton></td>   
             
                 
