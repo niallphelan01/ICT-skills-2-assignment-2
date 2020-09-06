@@ -36,9 +36,9 @@ Name: ... Niall Phelan ...
 
 ### UI Design.
 
-...... To be completed ........
+Parameterised URL
 
-![Test Image 1](Images/images.jpg)
+![Test Image 1](Images/parameterised.jpg)
 
 ![][view]
 >To be completed 
