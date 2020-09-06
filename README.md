@@ -37,8 +37,8 @@ Name: ... Niall Phelan ...
 ### UI Design.
 
 ...... To be completed ........
-<img src=".images/image.jpg">
 
+![Test Image 1](Images/images.jpg)
 
 ![][view]
 >To be completed 
