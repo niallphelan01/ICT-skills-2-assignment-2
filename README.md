@@ -17,11 +17,34 @@ Name: ... Niall Phelan ...
 
 ## Setup requirements.
 
-...... Insert a brief explanation (to a third party) of any non-standard setup steps necessary to run your app/client locally (after cloning the repo) ........
+...... run "npm install" in the route directory and then "npm start" which will start the react application in the localhost port 3000 ........
 
 ## API Data Model.
 
-..... To be completed........
+1. Patient Listing
+.....
++ A patient listing of 10 patients is given from the following GET request:
++ `http://hapi.fhir.org/baseR4/Patient/${match.params.id}`
++ The FHIR test server is located at http://hapi.fhir.org/
+........
+
+2. Single patient listing
+.....
++ A single patient is retrieved from the following GET request
++ `http://hapi.fhir.org/baseR4/Patient/${match.params.id}` where match.params.id is given from the patient selected on the patient listing page
+.....
+
+3. Updating a single patient
+.....
++ A single patient can be updated using the following PUT request
++ http://hapi.fhir.org/baseR4/Patient/{PatientID}
+
+![PutRequest1](Images/putRequest1.jpg)
+Image of put request with header types
+![PutRequest2](Images/putRequest2.jpg)
+Image of put request with Body information
+...
+
 
 ![][model]
 
@@ -39,7 +62,7 @@ Name: ... Niall Phelan ...
 
 Parameterised URL
 
-![Test Image 1](Images/parameterised.jpg)
+![Parameterised](Images/parameterised.jpg)
 
 ![][view]
 >To be completed 
