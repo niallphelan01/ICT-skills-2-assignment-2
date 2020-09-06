@@ -8,11 +8,12 @@ Name: ... Niall Phelan ...
 
 ............ 
  
- + Login page (to be completed)
+ + UI features
+   User interation with mednu selection added, with dynamic behaviour using multiple views between home, patient...
  + Home page with details of the app
- + Seach of patient field (to be completed)
- + Visit history for patients (to be completed)
- + Scheduling of patients (to be completed)
+ + Routing added for multiple views amd 1 parameterised url added for a single patient search
+ + Core hooks useState and useEffect used as part of api response from Patients and patient listing
+ + 2 web api endpoints used for this application to get a list of patients and get a singular patient
 
 ## Setup requirements.
 
