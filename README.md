@@ -32,6 +32,9 @@ Name: ... Niall Phelan ...
 .....
 + A single patient is retrieved from the following GET request
 + `http://hapi.fhir.org/baseR4/Patient/${match.params.id}` where match.params.id is given from the patient selected on the patient listing page
++ Note: I've allowed for null enteries for patient data such as address, DOB etc
+![NullEntry](Images/nullEntry.jpg)
+
 .....
 
 3. Updating a single patient
@@ -70,12 +73,17 @@ Parameterised URL
 ### Routing.
 
 ...... To be completed ......... 
-
-+ /blogs - displays all published blogs.
-+ /blogs/:id (private) - detail view of a particular blog.
-+ /blogs/:id/comments (private) - detail view of a particular blog and its comments.
-+ etc.
-+ etc.
+Route path="/" exact component={HomePage} />
+          <Route path="/patients" component={PatientsPage} />
+          <Route path="/waitingroom" component={WaitingRoomPage} />
+          <Route path="/visithistory" component={VisitHistoryPage} />
+          <Route path="/scheduling" component={SchedulingPage}/>
+          <Route path="/singlePatientPage/:id" component={SinglePatientPage}/>
++ /patients - displays all list of 10 patients.
++ /waiting room - displays a list of patients in the waiting room
++ /visithistory - display a list of visit history
++ /scheduling - displays a list of schedule visits 
++ /singlePatientPage:id display details for a patient selected from the patient listing with all relevant details added
 
 ## React feature set.
 
