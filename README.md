@@ -49,19 +49,13 @@ Image of put request with Body information
 ...
 
 
-![][model]
-
-......To be completed.........
-
-## App Design.
-
-### Component catalogue.
-
-....... To be completed .......
-
-![][stories]
 
 ### UI Design.
+Homepage
+![HomePage](Images/homePage.jpg)
+
+Patient Display Listing page
+![PatientListingPage](Images/patientDisplayPage.jpg)
 
 Parameterised URL
 
@@ -72,36 +66,23 @@ Parameterised URL
 
 ### Routing.
 
-...... To be completed ......... 
-Route path="/" exact component={HomePage} />
-          <Route path="/patients" component={PatientsPage} />
-          <Route path="/waitingroom" component={WaitingRoomPage} />
-          <Route path="/visithistory" component={VisitHistoryPage} />
-          <Route path="/scheduling" component={SchedulingPage}/>
-          <Route path="/singlePatientPage/:id" component={SinglePatientPage}/>
+...... 
 + /patients - displays all list of 10 patients.
 + /waiting room - displays a list of patients in the waiting room
 + /visithistory - display a list of visit history
 + /scheduling - displays a list of schedule visits 
 + /singlePatientPage:id display details for a patient selected from the patient listing with all relevant details added
+.....
 
 ## React feature set.
 
 ..... To be completed  ......
 
-+ useState and useEffect hooks - src/components/fileA.js
-+ useContext hook - src/components/fileb.js
-+ Extended Link - src/components/fileA.js
-+ Programmatic navigation - src/pages/fileC.js
++ useState and useEffect hooks - src/pages/patientsPage.js and src/pages/singlePatientPage.js
++ Programmatic navigation - src/components/siteHeader/index.js
 + etc
 + etc
 + etc
 
 ## Independent learning.
 
-. . . . . To be completed  ......... 
-
-
-[model]: ./data.jpg
-[view]: ./view.png
-[stories]: ./storybook.png
